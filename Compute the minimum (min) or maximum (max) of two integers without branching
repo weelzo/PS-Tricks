@@ -1,0 +1,5 @@
+int x;  // we want to find the minimum of x and y
+int y;   
+int r;  // the result goes here 
+r = y ^ ((x ^ y) & -(x < y)); // min(x, y)
+r = x ^ ((x ^ y) & -(x < y)); // max(x, y)
